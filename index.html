@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">MATHIAS</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+            <li><a href="#herramientas" onclick="seleccionar()">HERRAMIENTAS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/perfil.png" alt="" />
+        </div>
+        <h1>Mathias Alberti</h1>
+        <h2>QA Tester - Asistente Tecnico</h2>
+        <div class="redes">
+          <a href="mailto:albertimathias1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/mathiasalbertigonzalez/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Mathias Alberti.</span> Soy un estudiante de IT con
+          experiencia en Soporte Técnico y QA Testing. Apasionado por la
+          resolución de problemas técnicos y la mejora de la calidad del
+          producto, he trabajado en diversos proyectos educativos que han
+          contribuido a mi desarrollo personal. Actualmente, me dedico a la
+          formación continua para mantenerme al día con las últimas tecnologías
+          y metodologías de la industria.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                25-11-2003
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                095132365
+              </li>
+              <li>
+                <strong>Email</strong>
+                albertimathias1@gmail.com
+              </li>
+
+              <li>
+                <strong>Dirección</strong>
+                Canelones, Uruguay
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-windows"></i>
+                <span>WINDOWS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-computer"></i>
+                <span>PC</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          <a href="img/M_Alberti.pdf" target="_blank">Curriculum</a> <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Manual Testing</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Automatizacion API</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Office</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Hardware y Software</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Redes y conectividad </span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>45%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>86%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>76%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Resolución de problemas </span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Constancia</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Adaptabilidad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- SECCION HERRAMIENTAS -->
+<section id="herramientas" class="herramientas">
+  <div class="contenido-seccion">
+    <h2>Herramientas</h2>
+    <div class="galeria">
+      <div class="proyecto">
+        <img src="img/oficina.png" alt="" />
+        <p>Microsoft Office</p>
+    </div>
+    <div class="proyecto">
+        <img src="img/sql.png" alt="" />
+        <p>SQL/MYSQL</p>
+    </div>
+    <div class="proyecto">
+        <img src="img/jira.png" alt="" />
+        <p>Jira</p>
+    </div>
+    <div class="proyecto">
+        <img src="img/linux.png" alt="" />
+        <p>Linux</p>
+    </div>
+    <div class="proyecto">
+        <img src="img/github.png" alt="" />
+        <p>Github</p>
+    </div>
+    <div class="proyecto">
+        <img src="img/postman.png" alt="" />
+        <p>Postman</p>
+    </div>
+    <div class="proyecto">
+        <img src="img/java.png" alt="" />
+        <p>Java</p>
+    </div>
+    <div class="proyecto">
+        <img src="img/selenium.png" alt="" />
+        <p>Selenium IDE</p>
+    </div>
+</div>
+</div>
+</section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Soporte Técnico</h4>
+              <span class="casa">2024 JaP Verano -P5- Soporte + Gestión</span>
+              <span class="fecha">2023 - 2024</span>
+              <p>
+                Este certificado, desarrollado por Google, prepara para un cargo
+                de nivel inicial en soporte de TI. El programa combina clases en
+                video, pruebas y laboratorios de práctica para enseñar solución
+                de problemas, servicio al cliente, redes, sistemas operativos,
+                administración de sistemas y seguridad.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Gestion de proyectos</h4>
+              <span class="casa">2024 JaP Verano -P5- Soporte + Gestión</span>
+              <span class="fecha">2023 - 2024</span>
+              <p>
+                Desarrollado por Google, este certificado te prepara para una
+                carrera en gestión de proyectos. Se aprendera a crear planes de
+                gestión de riesgos, mejorar procesos, gestionar equipos y partes
+                interesadas, y manejar presupuestos. El programa cubre
+                metodologías tradicionales y Agile, con un enfoque en Scrum.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>QA Testing</h4>
+              <span class="casa">Jóvenes a Programar Ceibal </span>
+              <span class="fecha">2023 - 2024</span>
+              <p>
+                A través de este programa, se aprendera los fundamentos del
+                testing de software, incluyendo técnicas de pruebas funcionales,
+                automatizadas y de rendimiento. El curso combina teoría y
+                práctica, permitiéndote adquirir habilidades prácticas
+                esenciales para identificar y reportar errores, así como
+                garantizar la calidad y funcionalidad de las aplicaciones. Con
+                un enfoque en el aprendizaje activo y proyectos reales, este
+                curso está diseñado para prepararte para roles de nivel inicial
+                en el sector de QA.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Bachillerato tecnológico(Ayudante Técnico)</h4>
+              <span class="casa">I.T.S Arias Balparda</span>
+              <span class="fecha">2019 - 2022</span>
+              <p>
+                El Bachillerato Tecnológico en Ayudante Técnico del I.T.S Arias
+                Balparda 2019 proporciona una formación sólida en tecnologías de
+                la información y soporte técnico. A través de un enfoque
+                práctico y teórico, el programa cubre una amplia gama de temas,
+                incluyendo fundamentos de hardware y software, redes, sistemas
+                operativos y soporte técnico.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Técnico</h4>
+              <span class="casa">Autonomo</span>
+              <span class="fecha">2023 - 2024</span>
+              <p>
+                Trabajo en el cual se realizaban mantenimientos, limpiezas y
+                reparaciones de computadoras y notebooks. Este abarcaba tanto
+                hardware, software y limpieza de virus.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- SECCION PORTFOLIO 
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/p1.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p2.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p3.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p4.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p5.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/p6.jpg" alt="" />
+            <div class="overlay">
+              <h3>Diseño Creativo</h3>
+              <p>Fotografía</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+-->
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <form action="https://formsubmit.co/05ab79a95bbd2266879845b7d35dd236" method="POST">
+              <input type="text" placeholder="Tú Nombre" name="name"/>
+              <input type="text" placeholder="Número telefónico" name="tel" />
+              <input type="text" placeholder="Dirección de correo" name="email"/>
+              <input type="text" placeholder="Tema" name="coments"/>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Mensaje"
+              ></textarea>
+            
+          
+              <input type="submit" value="Enviar Mensaje" class="btn-enviar" >
+
+               <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contacto"> 
+               <input type="hidden" name="_captcha" value="false"> 
+           
+              
+            </form>
+          </div>
+          
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Canelones, Uruguay
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                Contactame: 095132365
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: albertimathias1@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="mailto:albertimathias1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/mathiasalbertigonzalez/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
