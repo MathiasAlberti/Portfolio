@@ -612,8 +612,8 @@ html{
 
 .contacto .col .btn-enviar {
     display: block;
-    width: 100%; /* Para que ocupe el 100% del contenedor en pantallas pequeñas */
-    max-width: 200px; /* Limita el tamaño máximo del botón */
+    width: 100%; 
+    max-width: 200px; 
     background-color: #252A2E;
     color: white;
     border: 2px solid transparent;
@@ -623,13 +623,13 @@ html{
     font-family: Arial, sans-serif;
     cursor: pointer;
     transition: background-color 0.3s ease, border 0.3s ease, transform 0.3s ease;
-    margin: 20px auto; /* Centra el botón */
+    margin: 20px auto; 
     text-align: center;
 }
 
 .contacto .col .btn-enviar:hover {
     background-position: left bottom;
-    background-color: #9b30ff; /* Color morado más claro al pasar el mouse */
+    background-color: #9b30ff; 
     border: 2px solid white;
     transform: scale(1.05);
 }
@@ -766,8 +766,8 @@ footer .arriba{
     }
 
     .contacto .col .btn-enviar {
-        width: 100%; /* Ocupa todo el ancho del contenedor */
-        max-width: none; /* Elimina el límite de ancho máximo */
-        margin-left: 0; /* Elimina el margen izquierdo */
+        width: 100%; 
+        max-width: none; 
+        margin-left: 0; 
     }
 }
